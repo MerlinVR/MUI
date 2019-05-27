@@ -53,8 +53,8 @@ Shader "UI/MUI"
             #pragma vertex vert
             #pragma fragment frag
 
-            // Target sm4 for centroid support on OpenGL ES
-            #pragma target 4.0
+            // Target 3.5 for centroid support on OpenGL ES
+            #pragma target 3.5
 
             #include "UnityCG.cginc"
             #include "UnityUI.cginc"
@@ -136,4 +136,6 @@ Shader "UI/MUI"
         ENDCG
         }
     }
+
+    Fallback "UI/Default"
 }
